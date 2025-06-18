@@ -36,3 +36,8 @@
   transform: translateY(-2px);
   transition: transform 34ms;
 }
+
+.off {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
