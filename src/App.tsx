@@ -43,6 +43,7 @@ function App() {
 
   return (
     <>
+        <div id='titlebar'/>
         <Play ref={playRef} pressed={pressed} press={press} />
         <Song ref={songRef} song={song} />
     </>

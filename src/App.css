@@ -1,5 +1,14 @@
+#titlebar {
+  -webkit-app-region: drag;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  height: 32px;
+  width: 100%;
+}
+
 .pushable {
-  background: #0C1B33;
+  background: #0c1b33;
   border: none;
   border-radius: 12px;
   padding: 0;
@@ -10,8 +19,8 @@
   padding: 12px 42px;
   border-radius: 12px;
   font-size: 1.25rem;
-  background: #7A306C;
-  color: #FDF7FA;
+  background: #7a306c;
+  color: #fdf7fa;
   transform: translateY(-8px);
 }
 
