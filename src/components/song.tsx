@@ -2,7 +2,6 @@ import { forwardRef, type ForwardedRef } from "react";
 
 import "./song.css";
 
-import { songArtURLTemplate } from "../constants";
 import type { FinalSong } from "../services/song";
 
 const Song = forwardRef(
@@ -14,7 +13,7 @@ const Song = forwardRef(
             <div id="cover-art-container">
               <img
                 id="cover-art"
-                src={songArtURLTemplate.replace("FILE", song.art)}
+                src={song.art}
               />
             </div>
             <div id="song-info">
