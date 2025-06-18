@@ -31,12 +31,17 @@
     "preview": "vite preview",
     "electron": "electron .",
     "app:dir": "electron-builder --dir",
-    "app:dist": "electron-builder"
+    "app:dist": "electron-builder",
+    "app:win": "electron-builder --win nsis portable --x64",
+    "app:mac": "electron-builder --mac --arm64",
+    "app:mac-univ": "electron-builder --mac --universal",
+    "app:linux": "electron-builder --linux --x64"
   },
   "dependencies": {
     "@fontsource/michroma": "^5.2.6",
     "@tailwindcss/vite": "^4.1.10",
     "axios": "^1.10.0",
+    "electron-is-dev": "^3.0.1",
     "normalize.css": "^8.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -50,7 +55,6 @@
     "@vitejs/plugin-react-swc": "^3.9.0",
     "electron": "^36.5.0",
     "electron-builder": "^26.0.12",
-    "electron-is-dev": "^3.0.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
