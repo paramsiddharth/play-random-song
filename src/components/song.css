@@ -1,0 +1,29 @@
+#cover-art-container {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cover-art {
+  margin: auto;
+  width: 100%;
+  animation: spin 6s linear infinite;
+}
+
+#song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
