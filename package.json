@@ -1,15 +1,37 @@
 {
   "name": "play-random-song",
   "private": true,
-  "version": "0.0.0",
+  "description": "Play me a random Param Siddharth song, please!",
+  "author": {
+    "name": "Param Siddharth",
+    "email": "me@paramsid.com"
+  },
+  "version": "1.0.0",
   "type": "module",
   "main": "electron.js",
+  "build": {
+    "productName": "Play A Random Param Siddharth Song",
+    "appId": "com.paramsid.records.play-random-song",
+    "mac": {
+      "category": "public.app-category.music"
+    },
+    "icon": "resources/icon.png",
+    "files": [
+      "dist/**/*",
+      "electron.js"
+    ],
+    "directories": {
+      "output": "desktop"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "electron": "electron ."
+    "electron": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
   },
   "dependencies": {
     "@fontsource/michroma": "^5.2.6",
@@ -27,6 +49,7 @@
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "electron": "^36.5.0",
+    "electron-builder": "^26.0.12",
     "electron-is-dev": "^3.0.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
