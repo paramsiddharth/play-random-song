@@ -11,7 +11,7 @@ const Song = (song: FinalSong) => {
 			</div>
 			<div id='song-info'>
 				<h1>{song.name}</h1>
-				<h2>{song.year}</h2>
+				<h2>({song.year})</h2>
 			</div>
 		</div>
 	);
